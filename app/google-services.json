@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "437673054701",
+    "firebase_url": "https://first-6f65a.firebaseio.com",
+    "project_id": "first-6f65a",
+    "storage_bucket": "first-6f65a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437673054701:android:69dcfc51c5fec467",
+        "android_client_info": {
+          "package_name": "com.blackdevth.dev.moneycalcal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437673054701-ec2lmr89d7j5mpch3h5h0tciq3ja9p6f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blackdevth.dev.moneycalcal",
+            "certificate_hash": "9427f82e36a2ebaa734c62a80a515e5b60b8d708"
+          }
+        },
+        {
+          "client_id": "437673054701-bs9mfrj3o2elg6t58cmjr3or1j7hj3q8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc7G-mv6jRELYuKZmWj03ucWmYzOGYSp0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

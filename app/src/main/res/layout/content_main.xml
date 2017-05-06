@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#616161"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.blackdevth.dev.moneycalcal.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pleaseInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:background="#F0F4C3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Please input \na price here"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/price_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F0F4C3"
+                android:capitalize="words"
+                android:gravity="top|center_horizontal"
+                android:maxLines="1"
+                android:text="PRICE"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:background="#F0F4C3"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:text="100"
+            android:textSize="80sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#CDDC39"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/vat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text=" VAT (%)" />
+
+        <EditText
+            android:id="@+id/editText_vat"
+            android:layout_width="99dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="numberDecimal"
+            android:text="7"
+            tools:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/sc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Service Charge (%)" />
+
+        <EditText
+            android:id="@+id/editText_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="numberDecimal"
+            android:text="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/price_vat_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFCA28"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Price+VAT."
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/price_vat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFCA28"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="numberDecimal"
+            android:text="107.00"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/price_sc_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E65100"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Price+VAT.\nService Charge"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/price_sc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E65100"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="numberDecimal"
+            android:text="117.70"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Instruction"
+        android:textAlignment="center" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="false"
+        android:layout_gravity="left|center"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"
+        android:elevation="0dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="visible"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+
+</LinearLayout>
